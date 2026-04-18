@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="450.0" spacing="20.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.ControladorCalculadora">
+    <children>
+        <Label text="NETWORK CALCULATOR EPN | ANTONY CISNEROS" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="26.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="20.0" />
+            </VBox.margin>
+        </Label>
+
+        <VBox spacing="10.0" style="-fx-background-color: #333333; -fx-background-radius: 10;">
+            <children>
+                <Label text="CONFIGURACIÓN DE RED" textFill="#9E9E9E">
+                    <font> <Font name="System Bold" size="10.0" /> </font>
+                </Label>
+                <HBox spacing="10.0">
+                    <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="IP Servidor:" textFill="#BBBBBB" />
+                                <TextField fx:id="txtIp" prefHeight="35.0" text="192.168.100.83" style="-fx-background-color: #424242; -fx-text-fill: white; -fx-background-radius: 5;" />
+                            </children>
+                        </VBox>
+                        <VBox prefWidth="100.0">
+                            <children>
+                                <Label text="Puerto:" textFill="#BBBBBB" />
+                                <TextField fx:id="txtPuerto" prefHeight="35.0" text="5000" style="-fx-background-color: #424242; -fx-text-fill: white; -fx-background-radius: 5;" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+            </padding>
+            <VBox.margin>
+                <Insets left="40.0" right="40.0" />
+            </VBox.margin>
+        </VBox>
+
+        <VBox spacing="10.0" style="-fx-background-color: #333333; -fx-background-radius: 10;">
+            <children>
+                <Label text="Número 1:" textFill="#BBBBBB" />
+                <TextField fx:id="txtN1" prefHeight="35.0" style="-fx-background-color: #424242; -fx-text-fill: white; -fx-background-radius: 5;" />
+
+                <Label text="Número 2:" textFill="#BBBBBB">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="txtN2" prefHeight="35.0" style="-fx-background-color: #424242; -fx-text-fill: white; -fx-background-radius: 5;" />
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+            <VBox.margin>
+                <Insets left="40.0" right="40.0" />
+            </VBox.margin>
+        </VBox>
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <children>
+                <Button onAction="#sumar" prefWidth="80.0" style="-fx-background-color: #4CAF50; -fx-cursor: hand;" text="+" textFill="WHITE">
+                    <font> <Font name="System Bold" size="18.0" /> </font>
+                </Button>
+                <Button onAction="#restar" prefWidth="80.0" style="-fx-background-color: #2196F3; -fx-cursor: hand;" text="-" textFill="WHITE">
+                    <font> <Font name="System Bold" size="18.0" /> </font>
+                </Button>
+                <Button onAction="#multiplicar" prefWidth="80.0" style="-fx-background-color: #FF9800; -fx-cursor: hand;" text="*" textFill="WHITE">
+                    <font> <Font name="System Bold" size="18.0" /> </font>
+                </Button>
+                <Button onAction="#dividir" prefWidth="80.0" style="-fx-background-color: #F44336; -fx-cursor: hand;" text="/" textFill="WHITE">
+                    <font> <Font name="System Bold" size="18.0" /> </font>
+                </Button>
+            </children>
+        </HBox>
+
+        <Button onAction="#limpiar" prefWidth="120.0" style="-fx-background-color: #757575; -fx-cursor: hand;" text="Limpiar" textFill="WHITE" />
+
+        <VBox alignment="CENTER" spacing="5.0">
+            <children>
+                <Label text="RESULTADO" textFill="#9E9E9E">
+                    <font> <Font size="10.0" /> </font>
+                </Label>
+                <Label fx:id="lblSalida" text="0.0" textFill="#03DAC6">
+                    <font>
+                        <Font name="System Bold" size="32.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </children>
+</VBox>
