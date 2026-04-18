@@ -61,4 +61,4 @@ Debido a que JavaFX ya no está incluido en el JDK por defecto, debes agregar lo
 
 ## 👨‍💻 Autor
 
-**Antony Cisneros** *Estudiante de Tecnología Superior en Desarrollo de Software* [Tu Enlace a LinkedIn o GitHub aquí]
+**Antony Cisneros** *Estudiante de Tecnología Superior en Desarrollo de Software*
